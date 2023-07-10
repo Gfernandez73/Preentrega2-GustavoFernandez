@@ -1,0 +1,516 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+      
+/* GRIDS AREAS */
+ 
+/* Estrategia en pantalla "Quienes Somos" y pantalla "Nuestros Productos- MOBILE LAST */
+ /* MAX-WIDTH */
+
+#productos{
+   display: grid;
+   grid-template-rows: .2fr 0.1fr 1fr .5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "nav nav nav nav nav nav"
+      "titulo titulo titulo titulo titulo publicidad"
+      "productos productos productos productos productos publicidad"
+      "footer footer footer footer footer footer"; 
+     
+}
+
+#promociones{
+   display: grid; 
+   grid-template-columns: 1fr 1fr; 
+   grid-template-rows: 0.2fr 0.1fr 1fr 1fr 0.5fr; 
+   gap: 0px 0px; 
+   grid-template-areas: 
+     "nav nav"
+     "titulo titulo"
+     "promo promo"
+     "promocion promocion"
+     "footer footer";      
+}
+ 
+#quienes{
+   display: grid;
+   grid-template-rows: .2fr 0.1fr 1fr 1fr .5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+   "nav nav nav nav nav nav"
+  "titulo titulo titulo titulo titulo titulo"
+   "imagen imagen imagen imagen imagen imagen"
+   "parrafo parrafo parrafo parrafo parrafo parrafo"
+   "footer footer footer footer footer footer";
+   /* height: 100vh; */
+   margin: 0;
+}
+
+#consultas{
+   display: grid;
+   grid-template-rows: .2fr 0.1fr 1fr .5fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-areas: 
+   "nav nav nav nav nav nav"
+   "titulo titulo titulo titulo titulo publicidad"
+   "descripcion descripcion descripcion descripcion descripcion publicidad"
+   "footer footer footer footer footer footer";
+   margin: 0;
+}
+ 
+/* HEADER */
+
+header{
+   background-color: #32576e;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+nav {
+   display: flex;
+    grid-area: nav;
+    background-color: #32576e;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 6px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-items: center;
+}
+.nav-list{
+      display: flex;
+    background-color: #baa07b;
+    width: 120px;
+    text-align: center;
+    color: #1c3c50;
+    border-radius: 5px;
+    text-decoration: none;
+    justify-content: center;
+}
+
+/* MAIN */
+
+section#productos {
+   display: flex;
+    grid-area: productos;
+    background-color: rgb(251, 251, 251);
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px 248px;
+  
+ }
+ section#promo{
+   display: flex;
+   justify-content: space-between;
+   margin-top: 20px;
+   margin-bottom: 100px;
+ }
+ section#promo-promo-1{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ section#promo-promo-2{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ section#promo-promo-3{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ section#promo-promo-4{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ section#promo-promo-1 p{
+   width: 100px;
+   padding: 10px;
+   background-color: #32576e;
+   color: #baa07b;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+   width: 100px;  
+ }
+ section#promo-promo-2 p{
+   width: 100px;
+   padding: 10px;
+   background-color: #32576e;
+   color: #baa07b;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+   width: 100px;  
+ }
+ section#promo-promo-3 p{
+   width: 100px;
+   padding: 10px;
+   background-color: #32576e;
+   color: #baa07b;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+   width: 100px;  
+ }
+ section#promo-promo-4 p{
+   width: 100px;
+   padding: 10px;
+   background-color: #32576e;
+   color: #baa07b;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+   width: 100px;  
+ }
+ section#productos-productos {
+   display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px 240px;
+ }
+ section#productos-productos-1 {
+   display: flex;
+   grid-area: productos;
+   background-color: rgb(251, 251, 251);
+   justify-content: flex-start;
+   align-items: center;
+   flex-direction: row;
+ }
+ section#productos-productos-1 p{
+   width: 100px;
+   padding: 10px;
+   background-color: #32576e;
+   color: #baa07b;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+   width: 100px;  
+ }
+ section#productos-productos-2 {
+   display: flex;
+   grid-area: productos;
+   background-color: rgb(251, 251, 251);
+   justify-content: flex-end;
+   align-items: center;
+   flex-direction: row;
+   margin-top: 155px;
+ }
+ section#productos-productos-2 p{
+   width: 100px;
+   padding: 10px;
+   background-color: #32576e;
+   color: #baa07b;
+   text-align: center;
+   font-weight: bold;
+   border-radius: 5px;
+ }
+ 
+ h2{
+   display: flex;
+    background-color: #7ba2ba;
+    width: 600px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 250px;
+    margin-right: 250px;
+    border-radius: 5px;
+    color: #1c3c50;
+ }
+ .mercado{
+   display: flex;
+  display: list-item;
+   width: 200px;
+ }
+  
+ section#servicios {
+   grid-area: productos;
+   background-color: rgb(251, 251, 251);     
+}
+ section#titulo {
+    grid-area: titulo;
+    background-color: rgb(251, 251, 251);     
+ }
+ section#titulo-promo h1{
+   display: flex;
+    background-color: #7ba2ba;
+    width: 600px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 350px;
+    margin-right: 250px;
+    border-radius: 5px;
+    color: #1c3c50;
+ }
+ h1{
+   display: flex;
+    background-color: #7ba2ba;
+    width: 600px;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+    margin-left: 230px;
+    margin-right: 250px;
+    border-radius: 5px;
+    color: #1c3c50;
+ }
+ section#parrafo {
+   grid-area: parrafo;
+   background-color: rgb(251, 251, 251); 
+   display: flex; 
+   justify-content: center;
+     
+}
+ section#imagen {
+   display: flex;
+   grid-area: imagen;
+   background-color: rgb(251, 251, 251);
+   align-items: center;    
+}
+section#imagen p{
+   padding: 20px;
+}
+ section#descripcion {
+   grid-area: descripcion;
+   background-color: rgb(243, 5, 5);     
+}
+section#formulario {
+   display: flex;
+   grid-area: descripcion;
+   background-color: #baa07b; 
+   justify-content: center;
+
+.row{
+   margin-top: 15px;
+}    
+}
+
+ aside {
+   display: flex;
+   grid-area: publicidad;
+   background-color: rgb(251, 251, 251);
+   border: 2px solid #32576e;
+   border-radius: 15px;
+   margin-top: 5px;
+   margin-bottom: 5px;
+   flex-direction: column;
+   align-items: center;
+ }
+ aside img{
+   display: flex;
+   height: 190px;
+   /* margin-left: 10px; */
+   margin-top: 20px;
+   margin-bottom: 15px;
+   border-radius: 10px;
+ }
+.logo{
+      /* flex-direction: row; */
+    /* justify-content: flex-end; */
+    margin-top: 2px;
+    margin-left: 5px;
+    margin-right: px;
+}
+.lista{
+   display: flex;
+   color: #baa07b;
+   margin-top: 22px;    
+}
+
+
+.horario{
+   display: flex;
+   /* margin-top: 5px; */
+   margin-left: 390px;
+   margin-right: 340px;
+}
+
+/* FOOTER */
+
+ footer {
+    grid-area: footer;
+    background-color:#32576e;
+    color: #baa07b;
+ }
+
+ 
+.pie{
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+.pie-1{
+   margin-left: 450px;
+   font-weight: bold;
+   font-size: x-large;
+}
+.pie-2{
+   margin-left: 350px;
+}
+.pie-3{
+   margin-left: 450px;
+}
+.pie-logo{
+   margin-left: 430px;
+}
+.pie-promo{
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+}
+.pie-1-promo{
+   margin-left: 530px;
+   font-weight: bold;
+   font-size: x-large;
+}
+.pie-2-promo{
+   margin-left: 420px;
+}
+.pie-3-promo{
+   margin-left: 530px;
+}
+.pie-logo-promo{
+   margin-left: 520px;
+}
+.lacteos{
+   width: 300px;
+}
+/* Pseudoclase */
+a:hover{
+   background-color: #1c3c50;
+   color: #7ba2ba;
+   font-weight: bold;
+   padding: 4px;
+}
+
+@media (max-width:767px) {
+   #quienes{
+      display: flex;
+      grid-template-columns: 1fr 
+      grid-template-areas:
+     "nav"
+      "titulo"
+      "imagen" 
+      "parrafo"
+       "footer";
+    flex-direction: column;
+   }
+   nav {
+      display: flex;
+      grid-area: nav;
+      background-color: #32576e;
+      border-bottom-right-radius: 15px;
+      border-bottom-left-radius: 15px;
+      padding: 6px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 15px;
+   }
+   .nav-list{
+   display: flex;
+    background-color: #baa07b;
+    width: 120px;
+    text-align: center;
+    color: #1c3c50;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 4px;
+   }
+   .pie-promo{
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+      margin-top: 15px;
+   }
+   .pie-1-promo{  
+    font-weight: bold;
+    font-size: x-large;
+    margin-left: 275px;
+   }
+   .pie-2-promo{
+      margin-left: 158px;
+   }
+   .pie-3-promo{
+      margin-left: 265px;
+   }
+   .pie-logo-promo{
+      margin-left: 260px;
+   }
+   
+   section#imagen {
+      display: flex;
+      /* grid-area: imagen; */
+      background-color: rgb(251, 251, 251);
+      align-items: stretch;
+      flex-direction: column;
+      margin-top: 15px;  
+   }
+   section#titulo-promo h1{
+      display: flex;
+       background-color: #7ba2ba;
+       width: 600px;
+       flex-direction: row;
+       justify-content: center;
+       margin-top: 5px;
+       margin-left: 100px;
+       margin-right: 250px;
+       border-radius: 5px;
+       color: #1c3c50;
+    }  
+
+    #productos{
+      display: flex;
+       grid-template-columns: 1fr 
+       grid-template-areas:
+         "nav"
+         "titulo"
+         "productos"
+         "footer"; 
+         margin: 0;
+      flex-direction: column;   
+   }
+   h1{
+      display: flex;
+       background-color: #7ba2ba;
+       width: 600px;
+       flex-direction: row;
+       justify-content: center;
+       margin-top: 5px;
+       margin-left: 100px;
+       border-radius: 5px;
+       color: #1c3c50;
+    }
+    section#productos-productos {
+      display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: flex-start;
+    }
+    section#productos-productos-1 {  
+      display: flex;
+      grid-area: productos;
+      background-color: rgb(251, 251, 251);
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+    }
+    section#productos-productos-2 {
+      display: flex;
+      grid-area: productos;
+      background-color: rgb(251, 251, 251);
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 155px;
+      flex-wrap: wrap;
+    }
+
+}
+   
